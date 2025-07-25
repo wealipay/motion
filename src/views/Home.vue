@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  hello
+  <div className="bg-red-700">wealipay</div>
 </template>
