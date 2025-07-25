@@ -1,0 +1,12 @@
+* {
+  @apply leading-none;
+  @apply align-top;
+}
+html {
+  @apply text-base;
+  background: black;
+  color: white;
+}
+html,body,#app {
+  @apply h-full;
+}
