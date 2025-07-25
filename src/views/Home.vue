@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
   import { ref } from 'vue'
-  import Hyperspeed from './Hyperspeed.vue'
+  import Hyperspeed from '@/components/bits/Hyperspeed.vue'
   import { hyperspeedPresets } from './HyperspeedPresets'
 
   // Use a preset or create custom options
