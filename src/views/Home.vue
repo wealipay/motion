@@ -6,7 +6,8 @@
 
 <script setup lang="ts">
   import { ref } from 'vue'
-  import Hyperspeed from '@/components/bits/Hyperspeed.vue'
+  import Hyperspeed from '@/components/Hyperspeed.vue'
+  import { hyperspeedPresets } from './HyperspeedPresets'
 
   // Use a preset or create custom options
   const effectOptions = ref(hyperspeedPresets.one)
