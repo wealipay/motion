@@ -2,7 +2,7 @@
   <div class="relative">
     <Orb className="w-full h-full absolute left-1/2 -translate-x-1/2  top-1/2 transform -translate-y-1/2" :hoverIntensity="3.65" :rotateOnHover="false" :hue="237" :forceHoverState="false" />
     <CircularText
-    className="w-1/4 text-blue-500 absolute left-1/2 -translate-x-1/2  top-1/2 transform -translate-y-1/2"
+    className="text-blue-500 absolute left-1/2 -translate-x-1/2  top-1/2 transform -translate-y-1/2"
     text=" 欢 迎g 光 临 alipay.wealipay.top"
     :spin-duration="20"
     on-hover="speedUp"
