@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full h-[1600px]">
+  <div class="relative w-full h-full">
     <Orb :hoverIntensity="0.5" :rotateOnHover="false" :hue="0" :forceHoverState="false" />
     <div className="mx-auto">alipay.wealipay.top</div>
   </div>
