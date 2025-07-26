@@ -306,5 +306,5 @@ watch(
 </script>
 
 <template>
-  <div ref="ctnDom" class="w-full h-full absolute  top-1/2 transform -translate-y-1/2" />
+  <div ref="ctnDom" class="w-full h-full absolute left-1/2 -translate-x-1/2  top-1/2 transform -translate-y-1/2" />
 </template>
