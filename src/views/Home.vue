@@ -20,13 +20,14 @@
 </template>
 
 <script setup lang="ts">
-import {useRouter} from "vue";
+import { useRouter } from "vue-router";
 import Orb from "@/components/bits/Orb.vue";
 import CircularText from "@/components/bits/CircularText.vue";
-const handdledelay=()=>{
-setTimeout(()=>{
+
 const router=useRouter()
-router.push("www.baidu.com")
-},2000)
-}
+const handdledelay = () => {
+  setTimeout(() => {
+    router.push("www.baidu.com");
+  }, 2000);
+};
 </script>
