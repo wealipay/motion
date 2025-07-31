@@ -4,8 +4,8 @@
 }
 html {
   @apply text-base;
-  background: black;
-  color: white;
+  @apply bg-black;
+  @apply text-white;
 }
 html,body,#app {
   @apply h-full;

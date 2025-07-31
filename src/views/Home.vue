@@ -12,7 +12,7 @@
     <a href="javascript:alert('点击环绕光圈穿越时空！')"
       ><CircularText
         className="font-roboto text-blue-500  absolute  top-1/2 transform -translate-y-1/2"
-        text=" 欢 迎g 光 临 alipay.wealipay.top"
+        text=" 欢 迎 光 临 alipay.wealipay.top"
         :spin-duration="20"
         on-hover="speedUp"
     /></a>
@@ -24,7 +24,7 @@ import { useRouter } from "vue-router";
 import Orb from "@/components/bits/Orb.vue";
 import CircularText from "@/components/bits/CircularText.vue";
 
-const router=useRouter()
+const router = useRouter();
 const handdledelay = () => {
   setTimeout(() => {
     router.push("www.baidu.com");
