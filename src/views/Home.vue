@@ -27,7 +27,7 @@ import CircularText from "@/components/bits/CircularText.vue";
 const router = useRouter();
 const handdledelay = () => {
   setTimeout(() => {
-    router.push("www.baidu.com");
+    router.push("/list");
   }, 2000);
 };
 </script>
