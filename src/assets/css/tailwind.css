@@ -2,6 +2,6 @@
 
 @theme {
   --color-*: initial;
-  --color-black: red;
-  --color-white:yellow;
+  --color-black: black;
+  --color-white: white;
 }
