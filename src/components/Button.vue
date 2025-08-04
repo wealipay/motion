@@ -2,7 +2,6 @@
 import GradientText from "./bits/GradientText.vue";
 const { size = "md" } = defineProps<{
   size?: "sm" | "md" | "lg";
-  reverse?: boolean;
 }>();
 const getSize = () => {
   switch (size) {
@@ -20,11 +19,13 @@ const getSize = () => {
 </script>
 
 <template>
-  <button :class="[getSize(), reverse ? 'bg-white' : 'bg-black']">
-    <GradientText text="Add a splash of color!"
-    :colors="['#ffaa40', '#9c40ff', '#ffaa40']"
-    :animation-speed="8"
-    :show-border="false"
-    class-name="your-custom-class" />
+  <button :class="[getSize()]">
+    <GradientText
+      text="Add a splash of color!"
+      :colors="['#ffaa40', '#9c40ff', '#ffaa40']"
+      :animation-speed="8"
+      :show-border="false"
+      class-name="your-custom-class"
+    />
   </button>
 </template>
