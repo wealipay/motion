@@ -19,7 +19,7 @@ const getSize = () => {
 </script>
 
 <template>
-  <button :class="[getSize()]">
+  <button>
     <GradientText
       text="Add a splash of color!"
       :colors="['#ffaa40', '#9c40ff', '#ffaa40']"
