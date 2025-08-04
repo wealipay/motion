@@ -20,5 +20,7 @@ const getSize = () => {
 </script>
 
 <template>
-  <button :class="[getSize(), reverse ? 'bg-blue-100' : 'bg-yellow-100']">{{ title }}</button>
+  <button :class="[getSize(), reverse ? 'bg-white' : 'bg-black']">
+    {{ title }}
+  </button>
 </template>
