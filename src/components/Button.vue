@@ -24,7 +24,7 @@ const getSize = () => {
       text="Add a splash of color!"
       :colors="['#ffaa40', '#9c40ff', '#ffaa40']"
       :animation-speed="8"
-      :show-border="false"
+      :show-border="true"
       class-name="your-custom-class"
     />
   </div>
