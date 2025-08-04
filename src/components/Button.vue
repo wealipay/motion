@@ -20,5 +20,5 @@ const getSize = () => {
 </script>
 
 <template>
-  <button :class="[getSize(), reverse ? '' : '']">{{ text }}</button>
+  <button :class="[getSize(), reverse ? '' : '']">{{ title }}</button>
 </template>
