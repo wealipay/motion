@@ -2,5 +2,5 @@
 import Button from "@/components/Button.vue";
 </script>
 <template>
-  <Button title="提交" reverse="true" />
+  <Button title="提交" />
 </template>
