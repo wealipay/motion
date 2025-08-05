@@ -26,7 +26,7 @@ const getSize = () => {
       :colors="['#ffaa40', '#9c40ff', '#ffaa40']"
       :animation-speed="8"
       :show-border="true"
-      className="p-2 w-60"
+      :className="[getSize()]"
     />
   </div>
 </template>
