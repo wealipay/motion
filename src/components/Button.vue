@@ -20,7 +20,7 @@ const getSize = () => {
 </script>
 
 <template>
-  <div>
+  <div className="mt-24">
     <GradientText
       :text="title"
       :colors="['#ffaa40', '#9c40ff', '#ffaa40']"
