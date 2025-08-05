@@ -57,7 +57,7 @@ const textStyle = computed(() => ({
     </div>
 
     <div
-      class="inline-block relative z-2 text-transparent bg-cover animate-gradient"
+      class="block relative z-2 text-transparent bg-cover animate-gradient"
       :style="textStyle"
     >
       {{ text }}
