@@ -24,6 +24,6 @@ const getSize = () => {
     :colors="['#ffaa40', '#9c40ff', '#ffaa40']"
     :animation-speed="8"
     :show-border="true"
-    className="w-48 h-48"
+    className="block w-48 h-48"
   />
 </template>

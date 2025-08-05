@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed } from "vue";
 
 interface GradientTextProps {
   text: string;
@@ -10,18 +10,18 @@ interface GradientTextProps {
 }
 
 const props = withDefaults(defineProps<GradientTextProps>(), {
-  text: '',
-  className: '',
-  colors: () => ['#ffaa40', '#9c40ff', '#ffaa40'],
+  text: "",
+  className: "",
+  colors: () => ["#ffaa40", "#9c40ff", "#ffaa40"],
   animationSpeed: 8,
   showBorder: false
 });
 
 const gradientStyle = computed(() => ({
-  backgroundImage: `linear-gradient(to right, ${props.colors.join(', ')})`,
+  backgroundImage: `linear-gradient(to right, ${props.colors.join(", ")})`,
   animationDuration: `${props.animationSpeed}s`,
-  backgroundSize: '300% 100%',
-  '--animation-duration': `${props.animationSpeed}s`
+  backgroundSize: "300% 100%",
+  "--animation-duration": `${props.animationSpeed}s`
 }));
 
 const borderStyle = computed(() => ({
@@ -30,8 +30,8 @@ const borderStyle = computed(() => ({
 
 const textStyle = computed(() => ({
   ...gradientStyle.value,
-  backgroundClip: 'text',
-  WebkitBackgroundClip: 'text'
+  backgroundClip: "text",
+  WebkitBackgroundClip: "text"
 }));
 </script>
 
@@ -46,11 +46,20 @@ const textStyle = computed(() => ({
     >
       <div
         class="absolute inset-0 bg-black rounded-[1.25rem] z-[-1]"
-        style="width: calc(100% - 2px); height: calc(100% - 2px); left: 50%; top: 50%; transform: translate(-50%, -50%)"
+        style="
+          width: calc(100% - 2px);
+          height: calc(100% - 2px);
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        "
       />
     </div>
 
-    <div class="inline-block relative z-2 text-transparent bg-cover animate-gradient" :style="textStyle">
+    <div
+      class="inline-block relative z-2 text-transparent bg-cover animate-gradient"
+      :style="textStyle"
+    >
       {{ text }}
     </div>
   </div>
