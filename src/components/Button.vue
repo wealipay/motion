@@ -3,7 +3,7 @@ import GradientText from "./bits/GradientText.vue";
 const { size = "md" } = defineProps<{
   size?: "sm" | "md" | "lg";
   title: string;
-  colors: string[];
+  colors: string;
 }>();
 const getSize = () => {
   switch (size) {
