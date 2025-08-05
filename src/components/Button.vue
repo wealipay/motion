@@ -22,7 +22,7 @@ const getSize = () => {
 <template>
   <div>
     <GradientText
-      text="title"
+      :text="title"
       :colors="['#ffaa40', '#9c40ff', '#ffaa40']"
       :animation-speed="8"
       :show-border="true"
