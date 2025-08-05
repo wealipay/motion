@@ -3,6 +3,7 @@ import GradientText from "./bits/GradientText.vue";
 const { size = "md" } = defineProps<{
   size?: "sm" | "md" | "lg";
   title: string;
+  colors: string[]
 }>();
 const getSize = () => {
   switch (size) {
@@ -22,8 +23,8 @@ const getSize = () => {
 <template>
   <div>
     <GradientText
-      text="title hhhh   ghh"
-      :colors="['#ffaa40', '#9c40ff', '#ffaa40']"
+      :text="title"
+      :colors="colors"
       :animation-speed="8"
       :show-border="true"
       className="p-2"
