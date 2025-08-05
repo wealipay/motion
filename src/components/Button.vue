@@ -19,7 +19,6 @@ const getSize = () => {
 </script>
 
 <template>
-  <div className="mt-24">
     <GradientText
       text="title"
       :colors="['#ffaa40', '#9c40ff', '#ffaa40']"
@@ -27,5 +26,4 @@ const getSize = () => {
       :show-border="true"
       :className="[getSize()]"
     />
-  </div>
 </template>
