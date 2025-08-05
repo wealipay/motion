@@ -20,10 +20,10 @@ const getSize = () => {
 
 <template>
   <GradientText
-    text="tit磊"
+    text="tithhhhh磊"
     :colors="['#ffaa40', '#9c40ff', '#ffaa40']"
     :animation-speed="8"
     :show-border="true"
-    class="block w-48 h-48"
+    class="w-48 text-white"
   />
 </template>
